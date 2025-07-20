@@ -65,7 +65,7 @@ Find all the screenshots of the program in the `screenshots/` folder.
       │   MongoDB Atlas   │
       │ (products, users) │
       └───────────────────┘
-yaml
+
 
 
 ---
@@ -84,15 +84,11 @@ Create two .env files:
 backend/.env
 
 env
-Copy
-Edit
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 frontend/.env
 
-env
-Copy
-Edit
+.env
 VITE_API_BASE_URL=https://your-backend-url.com/api
 Install dependencies
 
@@ -104,9 +100,6 @@ cd backend && pnpm install
 cd ../frontend && pnpm install
 Run the app locally
 
-bash
-Copy
-Edit
 # In /backend
 pnpm run dev
 
@@ -118,16 +111,10 @@ pnpm run dev
 
 Run backend tests:
 
-bash
-Copy
-Edit
 cd backend
 pnpm test
 Run frontend tests:
 
-bash
-Copy
-Edit
 cd frontend
 pnpm test
 ⚙️ Architecture Overview
@@ -140,14 +127,12 @@ Frontend built using Vite + React + Tailwind CSS + ShadCN
 CI/CD via GitHub Actions
 
 🎥 Demo Video
-🎬 Watch the demo video here
+🎬 Watch the demo video here on this link : https://youtu.be/TxKr8b4trv0?feature=shared
 
-📚 API Documentation
-See backend/docs/API.md for detailed route info, request formats, and examples.
+
 
 🙋‍♀️ Author
 Ian Kiprotich
-GitHub Profile
 
 🏁 License
 Licensed under the MIT License
