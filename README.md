@@ -133,6 +133,8 @@ CI/CD via GitHub Actions
 
 🙋‍♀️ Author
 Ian Kiprotich
+[GitHub](https://github.com/kiprotich25)
+
 
 🏁 License
 Licensed under the MIT License
