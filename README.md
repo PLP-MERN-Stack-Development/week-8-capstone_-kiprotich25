@@ -8,7 +8,7 @@
 
 - 🌐 [View the live app here](https://farm-soko.vercel.app)  
 - 🧠 Backend API: [API base URL](https://farm-soko-api.onrender.com)
-
+-  Video demo: [here]( https://youtu.be/TxKr8b4trv0?feature=shared)
 ---
 
 ## 📸 Screenshots
