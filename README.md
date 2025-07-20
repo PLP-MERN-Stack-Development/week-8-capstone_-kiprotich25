@@ -1,52 +1,129 @@
-# MERN Stack Capstone Project
+# 🌽 Farm Soko - MERN App
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+**FarmSoko** is a full-stack MERN marketplace for agricultural products. It allows users to post, browse, and manage farm produce in real-time. The app includes product categories, search and filter, image upload, and a personal dashboard.
 
-## Assignment Overview
+---
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+## 🚀 Live Demo
 
-## Getting Started
+🌐 [View the live app here](https://farm-soko.vercel.app)  
+🧠 Backend API: [API base URL](https://farm-soko-api.onrender.com)
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+---
 
-## Files Included
+## 📸 Screenshots
+Find all the screenshots of the program in the screenshots folder
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+## 📦 Features
 
-## Requirements
+- 🔐 Authentication & Authorization
+- 📤 Product posting with image upload (Cloudinary)
+- 🔍 Search and category filtering
+- 🧾 My Products view (edit/delete only your own)
+- ⚡ Realtime feedback and alerts
+- 📱 Fully responsive UI (ShadCN + Tailwind CSS)
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+---
 
-## Project Ideas
+## 🧪 Tech Stack
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+| Tech                      | Role                |
+|---------------------------|---------------------|
+| MongoDB                   | NoSQL Database      |
+| Express.js                | Backend Framework   |
+| React.js                  | Frontend UI         |
+| Node.js                   | Server Runtime      |
+| Tailwind CSS + ShadCN     | Styling & Components|
+| JWT                       | User Authentication |
+| Vite                      | React Build Tool    |
+| Vercel                    | Frontend Hosting    |
+| Render                    | Backend Hosting     |
 
-## Submission
+---
+Technical Architecture Diagram
+           ┌────────────────────┐
+           │   Frontend (React) │
+           │ Vite + Tailwind    │
+           │ ShadCN Components  │
+           └────────┬───────────┘
+                    │
+           Fetch / Submit
+                    │
+           ┌────────▼────────┐
+           │  Backend (Node) │
+           │  Express Server │
+           └────────┬────────┘
+                    │
+          ┌─────────▼─────────┐
+          │   MongoDB Atlas   │
+          │  (products, users)│
+          └───────────────────┘
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+## 🛠️ Setup Instructions
 
-## Resources
+1. **Clone the repo**
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+```bash
+git clone https://github.com/kiprotich25/FarmSoko.git
+cd farmsoko
+
+Set up environment variables
+Create two .env files:
+
+     backend/.env:
+     .env
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+
+frontend/.env:
+     .env
+VITE_API_BASE_URL=https://your-backend-url.com/api
+
+Install dependencies
+
+pnpm install
+cd backend && pnpm install
+cd ../frontend && pnpm install
+Run the app locally
+
+
+# In /backend
+pnpm run dev
+
+# In /frontend
+pnpm run dev
+🔬 Testing
+✅ Unit & Integration tests using Jest and Supertest
+
+✅ MongoDB Memory Server for in-memory testing
+
+
+To run backend tests:
+cd backend
+pnpm test
+
+
+To run frontend tests:
+cd frontend
+pnpm test
+
+⚙️ Architecture Overview
+Monorepo with separate frontend/ and backend/
+RESTful API with Express and JWT-based auth
+Frontend with Vite + React + Tailwind + ShadCN
+CI/CD via GitHub Actions
+
+
+🎥 Demo Video
+🎬 [Watch the demo video here](https://youtu.be/TxKr8b4trv0?feature=shared)
+
+📚 API Documentation
+See backend/docs/API.md for detailed route info, request formats, and examples.
+
+🙋‍♀️ Author
+Ian Kiprotich
+[GitHub](https://github.com/kiprotich25)
+
+🏁 License
+MIT License
